@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A7F4B82971B4410BD1BB076 /* Modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36595881BA044B788232A52F /* Modelos.swift */; };
+		C4047940CAD04C159AC758B1 /* NexoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D375276754AE3B4E5499E /* NexoraApp.swift */; };
+		CFD83FC31D024AB187287A9D /* PantallaBienvenida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167144791584D4C83BC683E /* PantallaBienvenida.swift */; };
+		00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E2E397F4594CEE9043B29D /* PantallaInicio.swift */; };
+		B250CA85F44B428D989FD56A /* PantallaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */; };
+		ED02DAFAF30542A7AF82FD4D /* PantallaVender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E883EF5354184A4233656 /* PantallaVender.swift */; };
+		8947502710834416AA16C660 /* PantallasRestantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */; };
+		47065D1BE9A446ECA3D3C7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624800A171BF4ECEBFACA013 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D46ED46E0E7D4043AFEA5712 /* NexoraPOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexoraPOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36595881BA044B788232A52F /* Modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelos.swift; sourceTree = "<group>"; };
+		597D375276754AE3B4E5499E /* NexoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexoraApp.swift; sourceTree = "<group>"; };
+		5167144791584D4C83BC683E /* PantallaBienvenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaBienvenida.swift; sourceTree = "<group>"; };
+		99E2E397F4594CEE9043B29D /* PantallaInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaInicio.swift; sourceTree = "<group>"; };
+		B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaLogin.swift; sourceTree = "<group>"; };
+		D05E883EF5354184A4233656 /* PantallaVender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaVender.swift; sourceTree = "<group>"; };
+		AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallasRestantes.swift; sourceTree = "<group>"; };
+		624800A171BF4ECEBFACA013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59E97284FE3648C4854817D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		246DA22D054F47FC9106BCC2 /* NexoraPOS */ = {
+			isa = PBXGroup;
+			children = (
+				36595881BA044B788232A52F /* Modelos.swift */,
+				597D375276754AE3B4E5499E /* NexoraApp.swift */,
+				5167144791584D4C83BC683E /* PantallaBienvenida.swift */,
+				99E2E397F4594CEE9043B29D /* PantallaInicio.swift */,
+				B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */,
+				D05E883EF5354184A4233656 /* PantallaVender.swift */,
+				AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */,
+				5555E4894CB244EBBF6D38C1 /* Products */,
+			);
+			path = NexoraPOS;
+			sourceTree = "<group>";
+		};
+		5555E4894CB244EBBF6D38C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D46ED46E0E7D4043AFEA5712 /* NexoraPOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91AA83EE737C4873A8550303 = {
+			isa = PBXGroup;
+			children = (
+				246DA22D054F47FC9106BCC2 /* NexoraPOS */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA57DF338C9E4B008935DD98 /* NexoraPOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B40D31988F4EC28397A620 /* Build configuration list for PBXNativeTarget "NexoraPOS" */;
+			buildPhases = (
+				366CC8114705404E9F68628F /* Sources */,
+				59E97284FE3648C4854817D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NexoraPOS;
+			productName = NexoraPOS;
+			productReference = D46ED46E0E7D4043AFEA5712 /* NexoraPOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B05F4F0B6CA472EB12A0716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					FA57DF338C9E4B008935DD98 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 816EC5F1BE59487B93042759 /* Build configuration list for PBXProject "NexoraPOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91AA83EE737C4873A8550303;
+			productRefGroup = 5555E4894CB244EBBF6D38C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA57DF338C9E4B008935DD98 /* NexoraPOS */,
+			);
+		};
+/* End PBXProject section */
+
+
+/* Begin PBXResourcesBuildPhase section */
+		997DF73FC984467E9E70F5AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47065D1BE9A446ECA3D3C7DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366CC8114705404E9F68628F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7F4B82971B4410BD1BB076 /* Modelos.swift in Sources */,
+				C4047940CAD04C159AC758B1 /* NexoraApp.swift in Sources */,
+				CFD83FC31D024AB187287A9D /* PantallaBienvenida.swift in Sources */,
+				00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */,
+				B250CA85F44B428D989FD56A /* PantallaLogin.swift in Sources */,
+				ED02DAFAF30542A7AF82FD4D /* PantallaVender.swift in Sources */,
+				8947502710834416AA16C660 /* PantallasRestantes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B4E6CA0A67614FEDB936003A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE9E207D14C04A299FD64F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41EAEC4CC6B24082B9D794E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexora.pos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBFBA116639E4990AF5BCCCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexora.pos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		816EC5F1BE59487B93042759 /* Build configuration list for PBXProject "NexoraPOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E6CA0A67614FEDB936003A /* Debug */,
+				BE9E207D14C04A299FD64F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B40D31988F4EC28397A620 /* Build configuration list for PBXNativeTarget "NexoraPOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EAEC4CC6B24082B9D794E7 /* Debug */,
+				EBFBA116639E4990AF5BCCCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 2B05F4F0B6CA472EB12A0716 /* Project object */;
+}
