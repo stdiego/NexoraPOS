@@ -169,7 +169,7 @@ struct PantallaEditarProducto: View {
                 // Campo nombre
                 VStack(alignment: .leading, spacing: 4) {
                     TextField("Nombre del Producto", text: $nombre)
-                        .onChange(of: nombre) { _ in errorNombre = false }
+                        .onChange(of: nombre) { _, _ in errorNombre = false }
                         .padding(12)
                         .overlay(RoundedRectangle(cornerRadius: 12).stroke(errorNombre ? Color.red : Color(hex: "#00D166"), lineWidth: errorNombre ? 1.5 : 1))
                     if errorNombre { Text("El nombre no puede estar vacío").font(.caption2).foregroundColor(.red) }
@@ -179,7 +179,7 @@ struct PantallaEditarProducto: View {
                 VStack(alignment: .leading, spacing: 4) {
                     TextField("Precio ($)", text: $precioTexto)
                         .keyboardType(.decimalPad)
-                        .onChange(of: precioTexto) { _ in errorPrecio = false }
+                        .onChange(of: precioTexto) { _, _ in errorPrecio = false }
                         .padding(12)
                         .overlay(RoundedRectangle(cornerRadius: 12).stroke(errorPrecio ? Color.red : Color(hex: "#00D166"), lineWidth: errorPrecio ? 1.5 : 1))
                     if errorPrecio { Text("Ingresa un precio válido mayor a 0").font(.caption2).foregroundColor(.red) }
@@ -189,7 +189,7 @@ struct PantallaEditarProducto: View {
                 VStack(alignment: .leading, spacing: 4) {
                     TextField("Cantidad en Stock", text: $stockTexto)
                         .keyboardType(.numberPad)
-                        .onChange(of: stockTexto) { _ in errorStock = false }
+                        .onChange(of: stockTexto) { _, _ in errorStock = false }
                         .padding(12)
                         .overlay(RoundedRectangle(cornerRadius: 12).stroke(errorStock ? Color.red : Color(hex: "#00D166"), lineWidth: errorStock ? 1.5 : 1))
                     if errorStock { Text("El stock no puede ser negativo").font(.caption2).foregroundColor(.red) }
@@ -398,7 +398,11 @@ struct PantallaDetalleFactura: View {
                     }
                 }
 
+                
+                // ANTES — línea 401
                 Button("Volver al Inicio") { dismiss() }
+               
+                
                     .foregroundColor(.gray)
             }
             .padding(.horizontal, 16).padding(.vertical, 20)
@@ -548,21 +552,4 @@ struct PantallaConfiguracion: View {
     }
 }
 
-// ══════════════════════════════════════════════════════════════════════════════
-// Extensión de Color para hexadecimal
-// ══════════════════════════════════════════════════════════════════════════════
-extension Color {
-    init(hex: String) {
-        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
-        var int: UInt64 = 0
-        Scanner(string: hex).scanHexInt64(&int)
-        let a, r, g, b: UInt64
-        switch hex.count {
-        case 3:  (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6:  (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8:  (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-        default: (a, r, g, b) = (255, 0, 0, 0)
-        }
-        self.init(.sRGB, red: Double(r)/255, green: Double(g)/255, blue: Double(b)/255, opacity: Double(a)/255)
-    }
-}
+

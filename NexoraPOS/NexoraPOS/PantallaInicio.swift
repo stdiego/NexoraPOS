@@ -35,6 +35,10 @@ struct PantallaInicio: View {
                     .tag(3)
             }
             .accentColor(Color(hex: "#0F5132"))
+            .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("volverAlInicio"))) { _ in
+                tabSeleccionada = 1
+                tabSeleccionada = 0
+            }
 
             // Overlay oscuro
             if mostrarMenuLateral {

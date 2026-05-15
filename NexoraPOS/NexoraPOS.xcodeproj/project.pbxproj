@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E2E397F4594CEE9043B29D /* PantallaInicio.swift */; };
+		1FF42AA92FB6892A00152855 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF42AA82FB6891B00152855 /* Extensions.swift */; };
+		1FF42AAB2FB68C9F00152855 /* DatosPanaderia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF42AAA2FB68C9000152855 /* DatosPanaderia.swift */; };
 		4A7F4B82971B4410BD1BB076 /* Modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36595881BA044B788232A52F /* Modelos.swift */; };
+		8947502710834416AA16C660 /* PantallasRestantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */; };
+		B250CA85F44B428D989FD56A /* PantallaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */; };
 		C4047940CAD04C159AC758B1 /* NexoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D375276754AE3B4E5499E /* NexoraApp.swift */; };
 		CFD83FC31D024AB187287A9D /* PantallaBienvenida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167144791584D4C83BC683E /* PantallaBienvenida.swift */; };
-		00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E2E397F4594CEE9043B29D /* PantallaInicio.swift */; };
-		B250CA85F44B428D989FD56A /* PantallaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */; };
 		ED02DAFAF30542A7AF82FD4D /* PantallaVender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E883EF5354184A4233656 /* PantallaVender.swift */; };
-		8947502710834416AA16C660 /* PantallasRestantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */; };
-		47065D1BE9A446ECA3D3C7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624800A171BF4ECEBFACA013 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D46ED46E0E7D4043AFEA5712 /* NexoraPOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexoraPOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF42AA82FB6891B00152855 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1FF42AAA2FB68C9000152855 /* DatosPanaderia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPanaderia.swift; sourceTree = "<group>"; };
 		36595881BA044B788232A52F /* Modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelos.swift; sourceTree = "<group>"; };
-		597D375276754AE3B4E5499E /* NexoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexoraApp.swift; sourceTree = "<group>"; };
 		5167144791584D4C83BC683E /* PantallaBienvenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaBienvenida.swift; sourceTree = "<group>"; };
+		597D375276754AE3B4E5499E /* NexoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexoraApp.swift; sourceTree = "<group>"; };
 		99E2E397F4594CEE9043B29D /* PantallaInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaInicio.swift; sourceTree = "<group>"; };
+		AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallasRestantes.swift; sourceTree = "<group>"; };
 		B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaLogin.swift; sourceTree = "<group>"; };
 		D05E883EF5354184A4233656 /* PantallaVender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaVender.swift; sourceTree = "<group>"; };
-		AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallasRestantes.swift; sourceTree = "<group>"; };
-		624800A171BF4ECEBFACA013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D46ED46E0E7D4043AFEA5712 /* NexoraPOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexoraPOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,8 @@
 		246DA22D054F47FC9106BCC2 /* NexoraPOS */ = {
 			isa = PBXGroup;
 			children = (
+				1FF42AAA2FB68C9000152855 /* DatosPanaderia.swift */,
+				1FF42AA82FB6891B00152855 /* Extensions.swift */,
 				36595881BA044B788232A52F /* Modelos.swift */,
 				597D375276754AE3B4E5499E /* NexoraApp.swift */,
 				5167144791584D4C83BC683E /* PantallaBienvenida.swift */,
@@ -122,26 +126,16 @@
 		};
 /* End PBXProject section */
 
-
-/* Begin PBXResourcesBuildPhase section */
-		997DF73FC984467E9E70F5AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47065D1BE9A446ECA3D3C7DE /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		366CC8114705404E9F68628F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4A7F4B82971B4410BD1BB076 /* Modelos.swift in Sources */,
+				1FF42AAB2FB68C9F00152855 /* DatosPanaderia.swift in Sources */,
 				C4047940CAD04C159AC758B1 /* NexoraApp.swift in Sources */,
 				CFD83FC31D024AB187287A9D /* PantallaBienvenida.swift in Sources */,
+				1FF42AA92FB6892A00152855 /* Extensions.swift in Sources */,
 				00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */,
 				B250CA85F44B428D989FD56A /* PantallaLogin.swift in Sources */,
 				ED02DAFAF30542A7AF82FD4D /* PantallaVender.swift in Sources */,
@@ -152,6 +146,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		41EAEC4CC6B24082B9D794E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexora.pos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		B4E6CA0A67614FEDB936003A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -224,31 +243,6 @@
 			};
 			name = Release;
 		};
-		41EAEC4CC6B24082B9D794E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nexora.pos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		EBFBA116639E4990AF5BCCCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -296,7 +290,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = 2B05F4F0B6CA472EB12A0716 /* Project object */;
 }
