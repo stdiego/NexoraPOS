@@ -1,10 +1,8 @@
 import SwiftUI
 import SwiftData
 
-// ── Datos iniciales Panadería ──────────────────────────────────────────────────
-// Agrega este archivo al proyecto. Los productos se insertan automáticamente
-// la primera vez que se abre la app (usando @AppStorage como bandera).
-// ──────────────────────────────────────────────────────────────────────────────
+// ── Datos iniciales──────────────────────────────────────────────────
+
 
 struct DatosPanaderia {
 
