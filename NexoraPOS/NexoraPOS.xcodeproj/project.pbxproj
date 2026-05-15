@@ -10,6 +10,7 @@
 		00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E2E397F4594CEE9043B29D /* PantallaInicio.swift */; };
 		1FF42AA92FB6892A00152855 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF42AA82FB6891B00152855 /* Extensions.swift */; };
 		1FF42AAB2FB68C9F00152855 /* DatosPanaderia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF42AAA2FB68C9000152855 /* DatosPanaderia.swift */; };
+		22ADE9522FB6CAE8008077FE /* PantallaReflexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADE9512FB6CAE8008077FE /* PantallaReflexion.swift */; };
 		4A7F4B82971B4410BD1BB076 /* Modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36595881BA044B788232A52F /* Modelos.swift */; };
 		8947502710834416AA16C660 /* PantallasRestantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */; };
 		B250CA85F44B428D989FD56A /* PantallaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C273A9C484CC69C3F2345 /* PantallaLogin.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		1FF42AA82FB6891B00152855 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1FF42AAA2FB68C9000152855 /* DatosPanaderia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPanaderia.swift; sourceTree = "<group>"; };
+		22ADE9512FB6CAE8008077FE /* PantallaReflexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaReflexion.swift; sourceTree = "<group>"; };
 		36595881BA044B788232A52F /* Modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelos.swift; sourceTree = "<group>"; };
 		5167144791584D4C83BC683E /* PantallaBienvenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaBienvenida.swift; sourceTree = "<group>"; };
 		597D375276754AE3B4E5499E /* NexoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexoraApp.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				D05E883EF5354184A4233656 /* PantallaVender.swift */,
 				AD91E749E59C48828CA6A81A /* PantallasRestantes.swift */,
 				5555E4894CB244EBBF6D38C1 /* Products */,
+				22ADE9512FB6CAE8008077FE /* PantallaReflexion.swift */,
 			);
 			path = NexoraPOS;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 				4A7F4B82971B4410BD1BB076 /* Modelos.swift in Sources */,
 				1FF42AAB2FB68C9F00152855 /* DatosPanaderia.swift in Sources */,
 				C4047940CAD04C159AC758B1 /* NexoraApp.swift in Sources */,
+				22ADE9522FB6CAE8008077FE /* PantallaReflexion.swift in Sources */,
 				CFD83FC31D024AB187287A9D /* PantallaBienvenida.swift in Sources */,
 				1FF42AA92FB6892A00152855 /* Extensions.swift in Sources */,
 				00E24351275F470A941E2156 /* PantallaInicio.swift in Sources */,

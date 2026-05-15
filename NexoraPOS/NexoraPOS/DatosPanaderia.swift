@@ -3,7 +3,6 @@ import SwiftData
 
 // ── Datos iniciales──────────────────────────────────────────────────
 
-
 struct DatosPanaderia {
 
     static let productos: [(nombre: String, precio: Double, stock: Int)] = [

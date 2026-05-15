@@ -34,7 +34,10 @@ struct PantallaInicio: View {
                     .tabItem { Label("Reportes", systemImage: "star.fill") }
                     .tag(3)
             }
-            .accentColor(Color(hex: "#0F5132"))
+            .accentColor(Color(hex: "#00D166"))
+            .toolbarBackground(Color(hex: "#101828"), for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
+            
             .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("volverAlInicio"))) { _ in
                 tabSeleccionada = 1
                 tabSeleccionada = 0
@@ -234,7 +237,8 @@ struct GraficoVentasView: View {
 struct MenuLateral: View {
     @Binding var mostrarMenu: Bool
     @State private var navegarAlLogin = false
-
+    @State private var mostrarReflexion = false
+    
     var body: some View {
         VStack(spacing: 0) {
             // Header verde
@@ -283,6 +287,12 @@ struct MenuLateral: View {
                 OpcionMenuView(icono: "gearshape", titulo: "Configuración") { mostrarMenu = false }
                 OpcionMenuView(icono: "list.bullet", titulo: "Historial de Facturas") { mostrarMenu = false }
                 OpcionMenuView(icono: "questionmark.circle", titulo: "Soporte") { mostrarMenu = false }
+                OpcionMenuView(icono: "text.bubble", titulo: "Reflexión del proyecto") {
+                    mostrarReflexion = true
+                }
+            }
+            .fullScreenCover(isPresented: $mostrarReflexion) {
+                PantallaReflexion(alCerrar: { mostrarReflexion = false })
             }
 
             Spacer()
@@ -305,7 +315,15 @@ struct MenuLateral: View {
             Spacer().frame(height: 16)
         }
         .background(Color.white)
-    }
+        .fullScreenCover(isPresented: $mostrarReflexion) {
+            PantallaReflexion(alCerrar: {
+                mostrarReflexion = false
+                mostrarMenu = false      // cierra el menú al volver
+            })
+        }
+        .fullScreenCover(isPresented: $navegarAlLogin) {
+            PantallaLogin()
+        }    }
 }
 
 struct OpcionMenuView: View {

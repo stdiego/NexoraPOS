@@ -62,6 +62,10 @@ struct PantallaVender: View {
                 }
             }
             .sheet(isPresented: $mostrarAgregarManual) { sheetAgregarManual }
+            .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("volverAlInicio"))) { _ in
+                navegarADetalle = false
+                pantallaActual = "CATALOGO"
+            }
         }
     }
 
@@ -590,12 +594,12 @@ struct PantallaVender: View {
             ProductoEnFactura(nombreProducto: $0.nombre, precioProducto: $0.precio, cantidad: $0.cantidad)
         }
 
-        // ✅ Descontar stock del inventario
+        // Descontar stock del inventario
         for (producto, cantidad) in carrito {
             producto.cantidadEnStock = max(0, producto.cantidadEnStock - cantidad)
         }
 
-        // ✅ Guardar con total = subtotal + IVA
+        // Guardar con total = subtotal + IVA
         let factura = Factura(id: id, total: granTotal, fecha: fecha, metodoPago: metodoPago, items: items)
         contexto.insert(factura)
 

@@ -400,10 +400,11 @@ struct PantallaDetalleFactura: View {
 
                 
                 // ANTES — línea 401
-                Button("Volver al Inicio") { dismiss() }
-               
-                
-                    .foregroundColor(.gray)
+                Button("Volver al Inicio") {
+                    dismiss()
+                    NotificationCenter.default.post(name: NSNotification.Name("volverAlInicio"), object: nil)
+                }
+                .foregroundColor(.gray)
             }
             .padding(.horizontal, 16).padding(.vertical, 20)
         }

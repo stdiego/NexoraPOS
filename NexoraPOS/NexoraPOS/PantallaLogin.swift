@@ -8,29 +8,26 @@ struct PantallaLogin: View {
     @State private var navegarAlInicio: Bool = false
 
     var body: some View {
-        NavigationStack {
-            ZStack {
-                LinearGradient(
-                    colors: [Color(hex: "#27AE60"), Color(hex: "#4A625A")],
-                    startPoint: .top,
-                    endPoint: .bottom
-                ).ignoresSafeArea()
+        ZStack {
+            LinearGradient(
+                colors: [Color(hex: "#27AE60"), Color(hex: "#4A625A")],
+                startPoint: .top,
+                endPoint: .bottom
+            ).ignoresSafeArea()
 
-                ScrollView {
-                    VStack(spacing: 0) {
-                        Spacer().frame(height: 72)
-                        logoSection
-                        Spacer().frame(height: 36)
-                        formularioSection
-                        Spacer().frame(height: 24)
-                        footerSection
-                    }
+            ScrollView {
+                VStack(spacing: 0) {
+                    Spacer().frame(height: 72)
+                    logoSection
+                    Spacer().frame(height: 36)
+                    formularioSection
+                    Spacer().frame(height: 24)
+                    footerSection
                 }
             }
-            .navigationDestination(isPresented: $navegarAlInicio) {
-                PantallaInicio()
-                    .navigationBarBackButtonHidden(true)
-            }
+        }
+        .fullScreenCover(isPresented: $navegarAlInicio) {
+            PantallaInicio()
         }
     }
 
