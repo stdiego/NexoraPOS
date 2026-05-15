@@ -34,7 +34,7 @@ struct PantallaVender: View {
     var subtotalInventario: Double { carrito.reduce(0) { $0 + ($1.key.precio * Double($1.value)) } }
     var subtotalManual: Double     { itemsManuales.reduce(0) { $0 + ($1.precio * Double($1.cantidad)) } }
     var subtotal: Double   { subtotalInventario + subtotalManual }
-    var iva: Double        { subtotal * 0.16 }
+    var iva: Double        { subtotal * 0.19 }
     var granTotal: Double  { subtotal + iva }
     var totalItemsEnCarrito: Int {
         carrito.values.reduce(0, +) + itemsManuales.reduce(0) { $0 + $1.cantidad }
@@ -358,7 +358,7 @@ struct PantallaVender: View {
 
             VStack(spacing: 10) {
                 HStack { Text("Subtotal").foregroundColor(.gray); Spacer(); Text(String(format: "$%.2f", subtotal)) }
-                HStack { Text("IVA (16%)").foregroundColor(.gray); Spacer(); Text(String(format: "$%.2f", iva)) }
+                HStack { Text("IVA (19%)").foregroundColor(.gray); Spacer(); Text(String(format: "$%.2f", iva)) }
                 Divider()
                 HStack {
                     Text("TOTAL").bold().font(.headline); Spacer()
